@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="Style.css" type="text/css" />
+  <title>Guess the number</title>
+</head>
+
+<body onload="guess()">
+  <header id="header">
+    <img class="image-1" src="header_banner.png" alt="header-banner" />
+  </header>
+  <div class="container">
+
+    <div id="field-1" class="guess-field">
+      <p class="output" id="firstUserOutput"></p>
+      <p class="range-number">Enter a number <br />between 0 and 100</p>
+      <input type="number" min="1" max="100" id="input-1" onchange="compareFirstUser()" />
+      <br />
+      <button class="hvr-float-shadow" id="submit-1">Submit</button>
+      <br>
+      <b id="new-1"></b>
+    </div>
+    <div id="field-2" class="guess-field">
+      <p class="output" id="secondUserOutput"></p>
+      <p class="range-number">
+        Enter a number <br />
+        between 0 and 100
+      </p>
+      <input type="number" min="1" max="100" id="input-2" onchange="compareSecondUser()" />
+      <br />
+      <button class="hvr-float-shadow" id="submit-2">Submit</button>
+      <br>
+      <b id="new-2"></b>
+    </div>
+    <div id="field-3" class="guess-field">
+      <p class="output" id="thirdUserOutput"></p>
+      <p class="range-number">
+        Enter a number <br />
+        between 0 and 100
+      </p>
+      <input type="number" min="1" max="100" id="input-3" onchange="compareThirdUser()" />
+      <br />
+      <button class="hvr-float-shadow" id="submit-3">Submit</button>
+      <br>
+      <b id="new-3"></b>
+    </div>
+  </div>
+  <!-- Import javascript  -->
+  <script src="Js.js"></script>
+</body>
+
+</html>
